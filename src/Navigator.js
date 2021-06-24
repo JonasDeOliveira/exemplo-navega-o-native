@@ -2,7 +2,7 @@ import React from 'react'
 import { 
     createAppContainer
 } from 'react-navigation'
-import { createDrawerNavigator } from 'react-navigation-drawer'
+import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import Home from './screens/Home'
 import Produto from './screens/Produto'
@@ -30,6 +30,6 @@ const menuRoutes = {
     Carrinho
 }
 
-const menuNavigator = createDrawerNavigator(menuRoutes, menuConfig)
+const menuNavigator = createBottomTabNavigator(menuRoutes, menuConfig)
 
 export default createAppContainer(menuNavigator)
