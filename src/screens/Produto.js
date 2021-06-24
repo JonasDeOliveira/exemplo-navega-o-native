@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet, Button } from 'react-native'
-
+import Constants from "expo-constants"
 export default props => {
     return (
         <View style={styles.container}>
@@ -15,6 +15,6 @@ export default props => {
 
 const styles = StyleSheet.create({
     container: {
-
+        paddingTop: Constants.statusBarHeight
     }
 })
